@@ -1,94 +1,53 @@
-/* ==== Base Reset & Font ==== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom right, #0d47a1, #b71c1c);
-  color: #ffffff;
-  line-height: 1.6;
-}
-
-/* ==== Header ==== */
-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 3em;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
-}
-
-/* ==== Navigation ==== */
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 20px;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #ffd700;
-}
-
-/* ==== Main Section ==== */
-.main-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.main-section h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.main-section p {
-  font-size: 1.3em;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
 body {
   font-family: Arial, sans-serif;
   background: #121212;
   color: #fff;
   margin: 0;
-  padding: 20px;
+  padding: 0;
 }
 
+/* Navigation bar styling */
+nav {
+  background: linear-gradient(to right, blue, purple);
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Page title */
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 30px 0 20px;
   font-size: 2rem;
   color: #ff3c3c;
 }
 
+/* Gallery layout */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 15px;
+  padding: 20px;
 }
 
 .gallery img {
   width: 100%;
-  height: auto;
+  height: 150px;
+  object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -97,12 +56,3 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(255, 60, 60, 0.7);
 }
-
-.gallery img {
-  max-width: 100%;
-  height: 200px; /* Adjust this height to your preferred scale */
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
