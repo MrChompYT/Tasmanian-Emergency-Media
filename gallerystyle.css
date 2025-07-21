@@ -1,0 +1,109 @@
+/* ==== Base Styling ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0d47a1, #b71c1c);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ==== Header ==== */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* ==== Navigation ==== */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255,255,255,0.1);
+  padding: 15px 0;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ==== Contact Section ==== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.05);
+}
+
+.contact-section h2 {
+  font-size: 2.2em;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form label {
+  text-align: left;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+form button {
+  padding: 12px;
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffa000;
+}
+
+/* ==== Footer ==== */
+footer {
+  background-color: rgba(0,0,0,0.4);
+  padding: 25px 20px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #ccc;
+}
