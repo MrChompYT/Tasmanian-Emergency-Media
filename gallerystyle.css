@@ -1,3 +1,70 @@
+/* ==== Base Reset & Font ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #0d47a1, #b71c1c);
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ==== Header ==== */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* ==== Navigation ==== */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ==== Main Section ==== */
+.main-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.main-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.main-section p {
+  font-size: 1.3em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   background: #121212;
